@@ -46,13 +46,13 @@ public class AssignmentApplicationTests {
 	}
 
 	@Test
-	public void checkFacebookHas2EmployeesInInvoiceAndGoogleHas1(){
+	public void checkFacebookHas3EmployeesInInvoiceAndGoogleHas1(){
 		File file = new File("test.csv");
 		try {
 			Map<String, Map> companyValues = service.getCompanyInvoices(file);
 			Map<String, Invoice> facebookStaffValues = companyValues.get("Facebook");
 			Map<String, Invoice> googleStaffValues = companyValues.get("Google");
-			assertThat(facebookStaffValues.size()).isEqualTo(2);
+			assertThat(facebookStaffValues.size()).isEqualTo(3);
 			assertThat(googleStaffValues.size()).isEqualTo(1);
 		} catch (IOException e) {
 			e.printStackTrace();

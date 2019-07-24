@@ -147,7 +147,7 @@ public class InvoiceService {
             for (int k = 0; k < columns.length; k++) {
                 sheet.autoSizeColumn(k);
             }
-            File excel = new File("docs/"+companies.get(i)+".xlsx");
+            File excel = new File(""+companies.get(i)+".xlsx");
             FileOutputStream fileOut = null;
             try {
                 fileOut = new FileOutputStream(excel);

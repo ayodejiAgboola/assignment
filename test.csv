@@ -1,0 +1,6 @@
+Employee ID,Billable Rate, Project,Date,Start Time,End Time
+1,300,Google,2019-07-01,09:00,17:00
+2,100,Facebook,2019-07-01,11:00,16:00
+3,200,Facebook,2019-07-01,08:30,16:00
+1,300,Google,2019-07-02,09:00,16:00
+1,300,Facebook,2019-07-03,09:00,16:00
